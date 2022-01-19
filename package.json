@@ -1,0 +1,53 @@
+{
+  "name": "react-postprocessing-dof-blob",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@react-three/drei": "5.3.1",
+    "@react-three/fiber": "6.2.2",
+    "@react-three/postprocessing": "2.0.3",
+    "postprocessing": "6.22.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "4.0.3",
+    "three": "0.129.0"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "raw-loader": "^4.0.1"
+  },
+  "scripts": {
+    "start": "create-react-app start",
+    "build": "create-react-app build",
+    "test": "create-react-app test",
+    "eject": "create-react-app eject"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged --pattern \"**/*.*(js)\""
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "jsxBracketSameLine": true,
+    "tabWidth": 2,
+    "printWidth": 120
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [],
+  "description": "react-postprocessing demo that uses DOF, Bloom, Noise and Vignette effects. Updated to work with r3f v6"
+}
